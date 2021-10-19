@@ -5,12 +5,12 @@ class NextLevel {
 
     // criacao da variaveis
     float prova, projeto, exercicios, moocs, media, mediaSemestre;
-    float media1 = 0, media2 = 0, media3 = 0;
+    float media1 = 0, media2 = 0;
     int bimestre = 0;
     System.out.println("Bem vindo a Next Level");
     System.out.println("Sistema de calculo de médias bimestrais e semestrais");
 
-    while (bimestre < 3) {
+    while (bimestre < 2) {
       bimestre++;
       System.out.println("Digite as notas do " + bimestre + "º Bimestre");
 
@@ -43,12 +43,10 @@ class NextLevel {
         media1 = media;
       } else if (bimestre == 2) {
         media2 = media;
-      } else if (bimestre == 3) {
-        media3 = media;
-      }
+      } 
     }
-    if (bimestre == 3) {
-      mediaSemestre = ((media1 + media2 + media3) / 3);
+    if (bimestre == 2) {
+      mediaSemestre = ((media1 + media2) / 2);
       if (mediaSemestre >= 8) {
         System.out.println("Sua média semestral é " + mediaSemestre);
         System.out.println("Você foi aprovado ");
